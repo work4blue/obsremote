@@ -1,3 +1,6 @@
+本项目是 OBS Classic 的Android 远程控制端.
+插件端代码参见  https://github.com/bilhamil/OBSRemote
+
 现在OBS 软件用于直播,广告很火,因此有人想用手机来来遥控,因为obs支持插件机制,因此有人开发不少远程开源插件
 
 目前obs软件分为两个版本, obs classic (经典版) 以及 obs stduio (工作室版), 前者用Visual Studio 开发,只能运行在windows上, 后面用 QT开发,能运行在Windows/Linux/Mac 上
