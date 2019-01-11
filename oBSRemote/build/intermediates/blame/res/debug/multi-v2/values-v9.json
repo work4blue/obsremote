@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v9/values-v9.xml",
+            "map": [
+                {
+                    "source": "/Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/res/values-v9/styles.xml",
+                    "from": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,164",
+                        "endLines": "3,7",
+                        "endColumns": "12,12",
+                        "endOffsets": "154,276"
+                    },
+                    "to": {
+                        "startLines": "2,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,159",
+                        "endLines": "3,6",
+                        "endColumns": "12,12",
+                        "endOffsets": "154,270"
+                    }
+                }
+            ]
+        }
+    ]
+}

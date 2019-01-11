@@ -1,0 +1,100 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:2:1-51:12
+MERGED from [:library] /Users/pro/Documents/android-workspace/android-studio/OBSRemote/library/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:2:1-51:12
+	package
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml
+		INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml
+		INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml
+		INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [:library] /Users/pro/Documents/android-workspace/android-studio/OBSRemote/library/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:library] /Users/pro/Documents/android-workspace/android-studio/OBSRemote/library/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml
+		INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:8:9-35
+		INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml
+		INJECTED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:11:5-12:23
+	android:name
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:11:22-64
+application
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:14:5-49:19
+	android:label
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:18:9-41
+	android:icon
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:17:9-45
+	android:allowBackup
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:16:9-35
+	android:theme
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:19:9-40
+	android:name
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:15:9-69
+activity#com.bilhamil.obsremote.activities.Remote
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:20:9-28:20
+	android:label
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:22:13-45
+	android:launchMode
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:23:13-43
+	android:name
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:21:13-68
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:25:13-27:69
+	android:value
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:27:11-67
+	android:name
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:26:11-57
+activity#com.bilhamil.obsremote.activities.Splash
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:30:9-40:20
+	android:screenOrientation
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:33:13-49
+	android:label
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:32:13-45
+	android:theme
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:34:13-60
+	android:name
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:31:13-68
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:35:13-39:29
+action#android.intent.action.MAIN
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:38:17-77
+	android:name
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:38:27-74
+service#com.bilhamil.obsremote.WebSocketService
+ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:42:9-47:19
+	android:label
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:45:18-54
+	android:exported
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:43:18-42
+	android:icon
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:44:18-54
+	android:name
+		ADDED from /Users/pro/Documents/android-workspace/android-studio/OBSRemote/oBSRemote/src/main/AndroidManifest.xml:42:18-50

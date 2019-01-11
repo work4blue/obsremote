@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/darkgray">
+
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hostentry"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/splashheader"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/remotelogo" />
+ 
+    <EditText
+        android:id="@+id/hostentry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_above="@+id/button_area"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/hostLabel"
+		android:text="@string/hostname"
+		android:inputType="text"
+		
+		style="@style/TextFieldStyle"
+        />
+
+    <TextView
+        android:id="@+id/splashheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/app_name"
+        android:textColor="@color/textgray"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/hostLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hostentry"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/splashLogo"
+        android:text="@string/hostlabel"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:textAppearance="@style/RemoteText" />
+    
+    <RelativeLayout android:id="@+id/button_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="17dp">
+
+        <Button
+            android:id="@+id/splashconnectbutton"
+            style="@style/ButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="connect"
+            android:text="@string/connect" 
+            android:layout_centerVertical="true"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"/>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

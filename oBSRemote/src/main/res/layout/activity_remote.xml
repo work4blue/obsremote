@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.bilhamil.obsremote"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context=".Remote" 
+    android:background="@color/darkgray">
+
+    <Button
+        android:id="@+id/startstopbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/volumebutton"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        
+        android:text="@string/startstreaming"
+        style="@style/ButtonStyle"
+        android:background="@drawable/buttonselector"
+        android:onClick="startStopStreaming"/>
+
+    <ImageButton
+            android:id="@+id/volumebutton"
+            android:contentDescription="@string/adjustvolume"
+            android:scaleType="fitCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/startstopbutton"
+            android:layout_alignBottom="@+id/startstopbutton"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/desktop_ons"
+            android:onClick="adjustVolume">
+                        
+    </ImageButton>
+    
+    <LinearLayout
+        android:id="@+id/columns"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/statspanel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/startstopbutton"
+        android:baselineAligned="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/ScenesColumn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.50" >
+
+            <TextView
+                android:id="@+id/ScenesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+                android:gravity="center_horizontal"
+                android:text="@string/scenes"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="@color/listlabelgray" />
+
+            <ListView
+                android:id="@+id/ScenesListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ScenesText" >
+
+            </ListView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SourcesColumn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.50" 
+            android:background="@color/sceneselected">
+
+            <TextView
+                android:id="@+id/SourcesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="3dp"
+                android:gravity="center_horizontal"
+                android:text="@string/sources"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:textStyle="bold"
+                android:textColor="@color/darkgray"/>
+
+<!--             <ListView -->
+<!--                 android:id="@+id/SourcesListView" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_alignParentBottom="true" -->
+<!--                 android:layout_alignParentLeft="true" -->
+<!--                 android:layout_alignParentRight="true" -->
+<!--                 android:layout_below="@+id/SourcesText" > -->
+<!--                 </ListView> -->
+
+            <com.mobeta.android.dslv.DragSortListView
+                
+                android:id="@+id/SourcesListView"
+			    dslv:drag_enabled="true"
+			    dslv:sort_enabled="true"
+			    dslv:drag_start_mode="onLongPress"
+			    dslv:drag_handle_id="@+id/sourceitem"
+			    
+			    android:cacheColorHint="@color/datorange"
+			    android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/SourcesText" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/statspanel"
+        android:layout_margin="0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" 
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@color/verydarkgray"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/timeLbl"
+                android:layout_height="wrap_content"
+                android:text="@string/timerunning" 
+                android:textColor="@color/textgray"
+                android:typeface="sans"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_weight=".25"/>
+
+            <TextView
+                android:id="@+id/timeValue"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:textColor="@color/textgray"
+                android:typeface="sans" 
+                android:layout_width="0dp"
+                android:gravity="left"
+                android:layout_marginLeft="3dp"
+                android:layout_weight=".25"/>
+
+            <TextView
+                android:id="@+id/fpsLbl"
+                android:layout_height="wrap_content"
+                android:text="@string/fps"
+                android:textColor="@color/textgray"
+                android:typeface="sans" 
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_weight=".25"/>
+
+            <TextView
+                android:id="@+id/fpsValue"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/textgray"
+                android:typeface="sans" 
+                android:layout_width="0dp"
+                android:gravity="left"
+                android:layout_marginLeft="3dp"
+                android:layout_weight=".25"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/droppedLbl"
+                android:layout_height="wrap_content"
+                android:text="@string/droppedframes" 
+                android:textColor="@color/textgray"
+                android:typeface="sans"
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_weight=".25"/>
+
+            <TextView
+                android:id="@+id/droppedValue"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/textgray"
+                android:typeface="sans" 
+                android:layout_width="0dp"
+                android:gravity="left"
+                android:layout_marginLeft="3dp"
+                android:layout_weight=".25"/>
+
+            <TextView 
+                android:id="@+id/bitrateLbl"
+                android:layout_height="wrap_content"
+                android:text="@string/bitrate"
+                android:textColor="@color/textgray"
+                android:typeface="sans" 
+                android:layout_width="0dp"
+                android:gravity="right"
+                android:layout_weight=".25"/>
+
+            <TextView
+                android:id="@+id/bitrateValue"
+                android:layout_height="wrap_content"
+                android:text="0 kb/s"
+                android:textColor="@color/textgray"
+                android:typeface="sans" 
+                android:layout_width="0dp"
+                android:gravity="left"
+                android:layout_marginLeft="3dp"
+                android:layout_weight=".25"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

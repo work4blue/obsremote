@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OBS Remote</string>
+    <string name="service_name">OBS Remote Websocket Connection</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="scenes">SCENES</string>
+	<string name="sources">SOURCES</string>
+	<string name="startstreaming">Start Streaming</string>
+	<string name="stopstreaming">Stop Streaming</string>
+	<string name="volume">Volume</string>
+	<string name="logo">OBS Remote Logo</string>
+	<string name="connect">Connect</string>
+	<string name="hostlabel">OBS Host: </string>
+	<string name="hostname">hostname</string>
+	<string name="password">password</string>
+	<string name="savepassword">Remember Password</string>
+	<string name="authenticate">Authenticate</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="timerunning">Time: </string>
+	<string name="droppedframes">Dropped: </string>
+	<string name="fps">FPS: </string>
+	<string name="bitrate">Bitrate: </string>
+	<string name="obsremote">OBS Remote</string>
+	<string name="adjustvolume">Adjust Stream Volume</string>
+	<string name="versionmismatch">Version Mismatch</string>
+</resources>
+
